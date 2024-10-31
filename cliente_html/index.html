@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cliente</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="lista">
+      <div>
+        Este es el nuevo elemento
+        <div>Este es el saludo</div>
+      </div>
+      <div id="nota"></div>
+
+      <!-- Selector de mes para filtrar notas -->
+      <label for="monthFilter">Filtrar notas por mes:</label>
+      <select id="monthFilter">
+        <option value="1">Enero</option>
+        <option value="2">Febrero</option>
+        <option value="3">Marzo</option>
+        <option value="4">Abril</option>
+        <option value="5">Mayo</option>
+        <option value="6">Junio</option>
+        <option value="7">Julio</option>
+        <option value="8">Agosto</option>
+        <option value="9">Septiembre</option>
+        <option value="10">Octubre</option>
+        <option value="11">Noviembre</option>
+        <option value="12">Diciembre</option>
+      </select>
+
+      <button onclick="filterNotesByMonth()">Filtrar</button>
+
+      <div id="notasFiltradas"></div>
+    </div>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
